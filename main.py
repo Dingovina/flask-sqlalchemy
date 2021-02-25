@@ -14,6 +14,19 @@ def main():
     db_session.global_init("db/blogs.db")
     db_sess = db_session.create_session()
 
+    user = db_sess.query(User).filter(User.id == 1).first()
+    job = Jobs()
+    job.team_leader = 1
+    job.job = 'deployment of residential modules 1 and 2'
+    job.work_size = 15
+    job.collaborators = '2, 3'
+    job.start_date = datetime.datetime.now()
+    job.is_finished = False
+    job.user = user
+    db_sess.add(job)
+    db_sess.commit()
+
+
     #app.run()
 
 
