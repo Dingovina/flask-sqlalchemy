@@ -14,7 +14,7 @@
     {% endfor %}
     <p>
         {{ form.password.label }}<br>
-        {{ form.password(class="form-control", type="email") }}<br>
+        {{ form.password(class="form-control", type="password") }}<br>
         {% for error in form.password.errors %}
     <div class="alert alert-danger" role="alert">
         {{ error }}
@@ -22,7 +22,7 @@
     {% endfor %}
     <p>
         {{ form.repeat_password.label }}<br>
-        {{ form.repeat_password(class="form-control", type="email") }}<br>
+        {{ form.repeat_password(class="form-control", type="password") }}<br>
         {% for error in form.repeat_password.errors %}
     <div class="alert alert-danger" role="alert">
         {{ error }}
@@ -30,7 +30,7 @@
     {% endfor %}
     <p>
         {{ form.surname.label }}<br>
-        {{ form.surname(class="form-control", type="email") }}<br>
+        {{ form.surname(class="form-control", type="text") }}<br>
         {% for error in form.surname.errors %}
     <div class="alert alert-danger" role="alert">
         {{ error }}
@@ -38,7 +38,7 @@
     {% endfor %}
     <p>
         {{ form.name.label }}<br>
-        {{ form.name(class="form-control", type="email") }}<br>
+        {{ form.name(class="form-control", type="text") }}<br>
         {% for error in form.name.errors %}
     <div class="alert alert-danger" role="alert">
         {{ error }}
@@ -46,7 +46,7 @@
     {% endfor %}
     <p>
         {{ form.age.label }}<br>
-        {{ form.age(class="form-control", type="email") }}<br>
+        {{ form.age(class="form-control", type="text") }}<br>
         {% for error in form.age.errors %}
     <div class="alert alert-danger" role="alert">
         {{ error }}
@@ -54,7 +54,7 @@
     {% endfor %}
     <p>
         {{ form.position.label }}<br>
-        {{ form.position(class="form-control", type="email") }}<br>
+        {{ form.position(class="form-control", type="text") }}<br>
         {% for error in form.position.errors %}
     <div class="alert alert-danger" role="alert">
         {{ error }}
@@ -62,14 +62,14 @@
     {% endfor %}
     <p>
         {{ form.speciality.label }}<br>
-        {{ form.speciality(class="form-control", type="email") }}<br>
+        {{ form.speciality(class="form-control", type="text") }}<br>
         {% for error in form.speciality.errors %}
     <div class="alert alert-danger" role="alert">
         {{ error }}
     </div>
     {% endfor %}<p>
         {{ form.address.label }}<br>
-        {{ form.address(class="form-control", type="email") }}<br>
+        {{ form.address(class="form-control", type="text") }}<br>
         {% for error in form.address.errors %}
     <div class="alert alert-danger" role="alert">
         {{ error }}
